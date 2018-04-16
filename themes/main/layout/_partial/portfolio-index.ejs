@@ -1,0 +1,13 @@
+<div class="col-md-4 col-xs-12 col-sm-6 col-12">
+  <div class="">
+    <a href="<%- config.root %><%- item.path %>">
+      <div class="portfolio-img" style="background-image: url('<%- config.root %><%- item.cover_image || theme.default_cover_image %>'); background-position:center center;background-repeat:no-repeat;background-size:cover;"></div>
+    </a>
+  </div>
+
+  <div class="entry-info">
+    <h4><%- item.title || theme.default_post_title || "Untitled" %></h4>
+    <hr class="entry-info-spacer"></hr>
+    <div class="entry-info-date"><%- item.date.format('ll') || "" %></div>
+  </div>
+</div>
